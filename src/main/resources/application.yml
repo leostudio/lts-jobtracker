@@ -1,0 +1,13 @@
+lts:
+  jobtracker:
+    cluster-name: changeme
+    listen-port: 35001
+    registry-address: zookeeper://127.0.0.1:2181
+    configs:
+      job:
+        logger: mysql
+        queue: mysql
+      jdbc:
+        url: jdbc:mysql://127.0.0.1:3306/lts?useUnicode=true&characterEncoding=UTF-8
+        username: root
+        password: root
